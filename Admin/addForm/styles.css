@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+
+h4{
+    background-color: #6ac7e0;
+    text-align: center;
+    color: white;
+    padding: 7px 10px;
+}
+
+.form-container {
+    max-width: 370px;
+    margin: auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px rgba(31, 30, 30, 0.1);
+
+    
+    
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.icon-space {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.submit-btn {
+    background-color: #fa9f00;
+    color: #fff;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 120px;
+   
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
