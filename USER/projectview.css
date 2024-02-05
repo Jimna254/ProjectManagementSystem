@@ -1,0 +1,23 @@
+.projectcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.statuspreview {
+margin-left: -27%;
+  width: 20%;
+  background-color: #4a7d78;
+}
+.projectcard {
+  width: 40%;
+  height: auto;
+  padding: 45px;
+  margin: 15px 0;
+  background-color: #f8f7f2;
+  box-shadow: rgba(34, 34, 34, 0.6) 0px 1px 6px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
