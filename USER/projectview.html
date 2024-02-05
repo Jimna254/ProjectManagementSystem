@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Projectview</title>
     <link rel="stylesheet" href="./projectview.css" />
   </head>
   <body>
@@ -20,14 +20,35 @@
             <p>Project Deadline</p>
           </div>
         </div>
-        <div class="statusheader"><h4>Mark Status</h4></div>
-        <form action="">
-          <input type="radio" id="active" name="states" value="Active" />
-            <label for="active">Active</label><br />
-          <input type="radio" id="active" name="states" value="Completed" />  
-          <label for="active">Completed</label><br />
+        <div class="statusheader">
+          <h4>Mark Status</h4>
+        </div>
+
+        <form id="statusForm">
+          <input
+            type="radio"
+            id="active"
+            name="states"
+            value="Active"
+            onclick="updateStatusPreview(this.value)"
+            checked
+          />
+           <label for="active">Active</label><br />
+          <input
+            type="radio"
+            id="completed"
+            name="states"
+            value="Completed"
+            onclick="updateStatusPreview(this.value)"
+          />
+            <label for="completed">Completed</label><br />
         </form>
       </div>
     </div>
+    <script>
+      function updateStatusPreview(status) {
+        document.querySelector(".statuspreview p").textContent = status;
+      }
+    </script>
   </body>
 </html>
