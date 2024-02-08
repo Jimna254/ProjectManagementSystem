@@ -20,7 +20,7 @@ body {
 }
 
 .image {
-  flex: 2;
+  flex: 1;
 }
 
 .image img {
