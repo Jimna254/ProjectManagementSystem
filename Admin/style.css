@@ -412,6 +412,7 @@ select {
 
 table {
   border-collapse: collapse;
+  width: 100%;
 }
 
 table thead tr {
@@ -443,6 +444,9 @@ table tbody td:first-child {
 
 table tbody tr {
   border-bottom: 1px solid #dee2e8;
+}
+.delete-icon {
+  color: red;
 }
 
 .client {

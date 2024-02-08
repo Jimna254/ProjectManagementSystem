@@ -7,7 +7,7 @@
       content="width=device-width,initial-scale=1,maximum-scale=1"
     />
     <title>Admin Dashboard | Keyframe Effects</title>
-    <link rel="stylesheet" href="./userdash.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -41,6 +41,7 @@
             style="background-image: url(img/1.jpeg)"
           ></div>
           <h4>Jackson Mwadia</h4>
+          <small>Admin</small>
         </div>
 
         <div class="side-menu">
@@ -51,13 +52,36 @@
                 <small>Dashboard</small>
               </a>
             </li>
-            
+            <li>
               <a href="">
+                <span class="las la-user-alt"></span>
+                <small>Users</small>
+              </a>
+            </li>
+            <!-- <li>
+              <a href="">
+                <span class="las la-envelope"></span>
+                <small>Mailbox</small>
+              </a>
+            </li> -->
+            <li>
+              <a href="./projects.html">
                 <span class="las la-clipboard-list"></span>
                 <small>Projects</small>
               </a>
             </li>
-           
+            <!--  <li>
+                       <a href="">
+                            <span class="las la-shopping-cart"></span>
+                            <small>Orders</small>
+                        </a>
+                    </li> -->
+            <!--  <li>
+                       <a href="">
+                            <span class="las la-tasks"></span>
+                            <small>Tasks</small>
+                        </a>
+                    </li> -->
           </ul>
         </div>
       </div>
@@ -109,10 +133,10 @@
             <div class="card">
               <div class="card-head">
                 <h2>17</h2>
-                <span class="las la-clipboard-list"></span>
+                <span class="las la-user-friends"></span>
               </div>
               <div class="card-progress">
-                <small>Total Projects</small>
+                <small>Users</small>
                 <div class="card-indicator">
                   <div class="indicator one" style="width: 60%"></div>
                 </div>
@@ -125,7 +149,7 @@
                 <span class="las la-clipboard-list"></span>
               </div>
               <div class="card-progress">
-                <small>Overdue</small>
+                <small>Past Deadline</small>
                 <div class="card-indicator">
                   <div class="indicator two" style="width: 80%"></div>
                 </div>
@@ -138,30 +162,37 @@
                 <span class="las la-clipboard-list"></span>
               </div>
               <div class="card-progress">
-                <small>Finished</small>
+                <small>Total Projects</small>
                 <div class="card-indicator">
                   <div class="indicator three" style="width: 65%"></div>
                 </div>
               </div>
             </div>
 
-            
+            <!-- <div class="card">
+              <div class="card-head">
+                <h2>47</h2>
+                <span class="las la-envelope"></span>
+              </div>
+              <div class="card-progress">
+                <small>New E-mails received</small>
+                <div class="card-indicator">
+                  <div class="indicator four" style="width: 90%"></div>
+                </div>
+              </div>
+            </div> -->
           </div>
 
           <div class="records table-responsive">
             <div class="record-header">
               <div class="add">
-                <!-- <span>Entries</span>
-                <select name="" id="">
-                  <option value="">Entername</option>
+                <!-- <span>Entries</span> -->
+                <!-- <select name="" id="">
+                  <option value="">ID</option>
                 </select> -->
-                <!-- <button>
-                  <a
-                    href="/ProjectManagementSystem/Admin/addForm/addProject.html"
-                  >
-                    Add Project</a
-                  >
-                </button> -->
+                <button>
+                  <a href="./Forms/addUser.html"> Add User</a>
+                </button>
               </div>
 
               <div class="browse">
@@ -170,9 +201,9 @@
                   placeholder="Search"
                   class="record-search"
                 />
-                <select name="" id="">
+                <!-- <select name="" id="">
                   <option value="">Status</option>
-                </select>
+                </select> -->
               </div>
             </div>
 
@@ -181,78 +212,51 @@
                 <thead>
                   <tr>
                     <th>#</th>
-                    
-                    <th><span class="las la-sort"></span> Project</th>
-                    <th><span class="las la-sort"></span> Description</th>
-                    <th><span class="las la-sort"></span> Created Date</th>
-                    <th><span class="las la-sort"></span> End Date</th>
-                    <th><span class="las la-sort"></span> ACTIONS</th>
+                    <th><span class="las la-sort"></span>First Name</th>
+                    <th><span class="las la-sort"></span>Last Name</th>
+                    <th><span class="las la-sort"></span>Email</th>
+                    <th>
+                      <span class="las la-sort"></span> Area of Specialization
+                    </th>
+                    <th><span class="las la-sort"></span> Password</th>
+                    <th><span class="las la-sort"></span>Project Assigned</th>
+                    <th><span class="las la-sort"></span>ACTIONS</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>#5033</td>
-        
-                    <td>Web Design</td>
-                    <td>Design website using Js, html and css</td>
-                    <td>05-02-2024</td>
-                    <td>05-04-2024</td>
+                    <td>James</td>
+                    <td>Wanjiku</td>
+                    <td>jameskw2605@gmail.com</td>
+                    <td>Software Engineer</td>
+                    <td>@14547766462</td>
+                    <td>Elixr</td>
+
                     <td>
                       <div class="actions">
-                        <span class="lab la-telegram-plane"></span>
+                        <!-- <span class="lab la-telegram-plane"></span> -->
                         <span class="las la-eye"></span>
                         <span
                           style="font-size: 18px"
                           class="fa-regular fa-pen-to-square"
-                        ></span>
+                        >
+                        </span>
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <td>#5033</td>
-                    <td>Web Design</td>
-                    <td>Design website using Js, html and css</td>
-                    <td>05-02-2024</td>
-                    <td>05-04-2024</td>
+                    <td>James</td>
+                    <td>Wanjiku</td>
+                    <td>jameskw2605@gmail.com</td>
+                    <td>Software Engineer</td>
+                    <td>@14547766462</td>
+                    <td>Elixr</td>
+
                     <td>
                       <div class="actions">
-                        <span class="lab la-telegram-plane"></span>
-                        <span class="las la-eye"></span>
-                        <span
-                          style="font-size: 18px"
-                          class="fa-regular fa-pen-to-square"
-                        ></span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>#5033</td>
-                   
-                    </td>
-                    <td>Web Design</td>
-                    <td>Design website using Js, html and css</td>
-                    <td>05-02-2024</td>
-                    <td>05-04-2024</td>
-                    <td>
-                      <div class="actions">
-                        <span class="lab la-telegram-plane"></span>
-                        <span class="las la-eye"></span>
-                        <span
-                          style="font-size: 18px"
-                          class="fa-regular fa-pen-to-square"
-                        ></span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>#5033</td>
-                    <td>Web Design</td>
-                    <td>Design website using Js, html and css</td>
-                    <td>05-02-2024</td>
-                    <td>05-04-2024</td>
-                    <td>
-                      <div class="actions">
-                        <span class="lab la-telegram-plane"></span>
+                        <!-- <span class="lab la-telegram-plane"></span> -->
                         <span class="las la-eye"></span>
                         <span
                           style="font-size: 18px"
