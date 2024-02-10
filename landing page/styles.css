@@ -189,6 +189,11 @@ background-color: beige;
   margin-bottom: 0.5rem;
 }
 
+
+.content{
+  padding-left: 7px;
+}
+
 @media (width < 900px) {
   .link a:not(.nav__btn) {
     display: none;
