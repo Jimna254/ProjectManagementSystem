@@ -1,0 +1,25 @@
+### login
+POST http://localhost:3001/users/login
+Content-Type: application/json
+
+{
+    "email": "sunshine@gmail.com",
+    "password": "12345678"
+   
+}
+
+### resetpwd
+PUT http://localhost:3001/users/reset
+Content-Type: application/json
+
+{
+    "email": "sunshine@gmail.com",
+    "password": "12345678"
+   
+}
+###Check details of the content
+
+POST http://localhost:3001/users/checkdetails
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRkMTY0YzdiLTM4MDgtNDRmNy04ODAyLTZiNjIzZDQwMjE3MiIsImVtYWlsIjoic3Vuc2hpbmVAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDc2Mzg4MDMsImV4cCI6MTcwNzY0MjQwM30.-QKhMehSugz46AIwj1Uhwy15KmjWJM4smssqIf7qz-A
+
