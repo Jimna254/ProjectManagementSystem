@@ -4,8 +4,8 @@ Content-Type: application/json
 token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRkMTY0YzdiLTM4MDgtNDRmNy04ODAyLTZiNjIzZDQwMjE3MiIsImVtYWlsIjoic3Vuc2hpbmVAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDc3MTk5ODMsImV4cCI6MTcwNzgwNjM4M30.aLeSja1Vdpw-yzbAzDBsnztimlPlKNMcP7HPMrmnoyU
 
 {
-    "projectname": "PMSendpoints",
-    "description": "Backend",
+    "projectname": "PMSNodeMailer",
+    "description": "BackgroundService",
     "createdate": "2024-02-12",
     "enddate": "2024-12-31"
 }
@@ -13,44 +13,47 @@ token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRkMTY0YzdiLTM4MDgtNDRmNy04
 ### Get all Projects
 GET http://localhost:3001/projects
 Content-Type: application/json
-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRkMTY0YzdiLTM4MDgtNDRmNy04ODAyLTZiNjIzZDQwMjE3MiIsImVtYWlsIjoic3Vuc2hpbmVAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDc3MDY4NDUsImV4cCI6MTcwNzcxMDQ0NX0.LNj6eEXUzLULN0g7yQLfB_OQrsYOvSYLEqDkh4eaDa4
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRkMTY0YzdiLTM4MDgtNDRmNy04ODAyLTZiNjIzZDQwMjE3MiIsImVtYWlsIjoic3Vuc2hpbmVAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDc3MTk5ODMsImV4cCI6MTcwNzgwNjM4M30.aLeSja1Vdpw-yzbAzDBsnztimlPlKNMcP7HPMrmnoyU
 
 
 ### Get One
 GET http://localhost:3001/projects/49ad4376-a194-4b79-b6b3-73aa82964aa2
 Content-Type: application/json
-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRkMTY0YzdiLTM4MDgtNDRmNy04ODAyLTZiNjIzZDQwMjE3MiIsImVtYWlsIjoic3Vuc2hpbmVAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDc3MDY4NDUsImV4cCI6MTcwNzcxMDQ0NX0.LNj6eEXUzLULN0g7yQLfB_OQrsYOvSYLEqDkh4eaDa4
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRkMTY0YzdiLTM4MDgtNDRmNy04ODAyLTZiNjIzZDQwMjE3MiIsImVtYWlsIjoic3Vuc2hpbmVAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDc3NDc4NjUsImV4cCI6MTcwNzgzNDI2NX0.jEx3PWynJPUI0Ibva9lezSjpBGP0qwQ8MNjk_3Z50P0
 
 
 ### Update a user
-PUT http://localhost:3001/projects/update/9bea87ed-1929-4963-b2c3-178839ef8b85
+PUT http://localhost:3001/projects/update/148e4f34-1b85-4b70-aefe-481cdcaf5bd1
 Content-Type: application/json
-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRkMTY0YzdiLTM4MDgtNDRmNy04ODAyLTZiNjIzZDQwMjE3MiIsImVtYWlsIjoic3Vuc2hpbmVAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDc3MDY4NDUsImV4cCI6MTcwNzcxMDQ0NX0.LNj6eEXUzLULN0g7yQLfB_OQrsYOvSYLEqDkh4eaDa4
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRkMTY0YzdiLTM4MDgtNDRmNy04ODAyLTZiNjIzZDQwMjE3MiIsImVtYWlsIjoic3Vuc2hpbmVAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDc3NDgwOTEsImV4cCI6MTcwNzgzNDQ5MX0.o_uk97kvkfMuGZ4FXFyPj2M1XS8w1gA-lXABlwQUtnU
 
 
 {
-    "name": "Kariuki James",
-    "email": "jameskw26@gmail.com",
-    "role": "user",
-    "password": "12345678",
-    "areaofspecialization": "Software Engineer"
+    "projectname": "NodeMailer",
+    "description": "BackgroundServices",
+    "createdate": "2024-02-12",
+    "enddate": "2024-12-31"
 }
 
 ### Assign User
 
-PUT http://localhost:3001/projects/assignuser/9bea87ed-1929-4963-b2c3-178839ef8b85
+PUT http://localhost:3001/projects/assignuser/148e4f34-1b85-4b70-aefe-481cdcaf5bd1
 Content-Type: application/json
 token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRkMTY0YzdiLTM4MDgtNDRmNy04ODAyLTZiNjIzZDQwMjE3MiIsImVtYWlsIjoic3Vuc2hpbmVAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDc3MTk5ODMsImV4cCI6MTcwNzgwNjM4M30.aLeSja1Vdpw-yzbAzDBsnztimlPlKNMcP7HPMrmnoyU
 
 
 {
-    "user-id": "e9dbf2ce-f9ac-4fc2-bdca-ff"
+    "user_id": "5818fbe6-c757-4039-b05d-b9fb2476b8a9"
 }
 
 
 ### Delete a project
 
-DELETE http://localhost:3001/projects/delete/9bea87ed-1929-4963-b2c3-178839ef8b85
+DELETE http://localhost:3001/projects/delete/4bd40c9e-8f44-4408-a85e-8608cf37dcac
 Content-Type: application/json
-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRkMTY0YzdiLTM4MDgtNDRmNy04ODAyLTZiNjIzZDQwMjE3MiIsImVtYWlsIjoic3Vuc2hpbmVAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDc3MDY4NDUsImV4cCI6MTcwNzcxMDQ0NX0.LNj6eEXUzLULN0g7yQLfB_OQrsYOvSYLEqDkh4eaDa4
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRkMTY0YzdiLTM4MDgtNDRmNy04ODAyLTZiNjIzZDQwMjE3MiIsImVtYWlsIjoic3Vuc2hpbmVAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDc3NDc4NjUsImV4cCI6MTcwNzgzNDI2NX0.jEx3PWynJPUI0Ibva9lezSjpBGP0qwQ8MNjk_3Z50P0
 
+###Mark as complete
+PUT http://localhost:3001/projects/markascomplete/4bd40c9e-8f44-4408-a85e-8608cf37dcac
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRkMTY0YzdiLTM4MDgtNDRmNy04ODAyLTZiNjIzZDQwMjE3MiIsImVtYWlsIjoic3Vuc2hpbmVAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDc3NDgwOTEsImV4cCI6MTcwNzgzNDQ5MX0.o_uk97kvkfMuGZ4FXFyPj2M1XS8w1gA-lXABlwQUtnU

@@ -76,9 +76,15 @@ export const updateProject = async (req: Request, res: Response) => {
     const id = req.params.id;
 
     const { projectname, description, createdate, enddate }: Project = req.body;
+    console.log(req.body);
+
     console.log("proj ID:", id);
     let result = await dbhelper.execute("updateProject", {
       project_id: id,
+      projectname,
+      description,
+      createdate,
+      enddate,
     });
     return res.json({ result, message: "Project updated successfully" });
   } catch (error) {
@@ -91,14 +97,19 @@ export const updateProject = async (req: Request, res: Response) => {
 
 export const assignUser = async (req: Request, res: Response) => {
   try {
-    const id = req.params.id;
+    const id = req.params.project_id;
 
     const { user_id }: Project = req.body;
     console.log("proj ID:", id);
-    let result = await dbhelper.execute("assignUser", {
-      project_id: id,
-      user_id: user_id,
-    });
+    let result = (
+      await dbhelper.execute("assignUser", {
+        project_id: id,
+        user_id: user_id,
+      })
+    ).rowsAffected;
+    console.log("UserID", user_id);
+    console.log("UserID", user_id);
+
     return res.json({ result, message: "Project assigned successfully" });
   } catch (error) {
     console.log("Error in getting data from database", error);
@@ -111,7 +122,7 @@ export const assignUser = async (req: Request, res: Response) => {
 export const deleteProject = async (req: Request, res: Response) => {
   try {
     const id = req.params.id;
-    console.log("Proj ID:", id);
+    console.log("Proj ID Del:", id);
     let project = await dbhelper.execute("deleteProject", { project_id: id });
 
     return res.json({ project });
@@ -120,5 +131,20 @@ export const deleteProject = async (req: Request, res: Response) => {
     return res
       .status(400)
       .json({ message: "There was an issue deleting Project" });
+  }
+};
+
+export const markComplete = async (req: Request, res: Response) => {
+  try {
+    const id = req.params.id;
+    console.log("Proj ID:", id);
+    let project = await dbhelper.execute("completed", { project_id: id });
+
+    return res.json({ project });
+  } catch (error) {
+    console.log("Error in getting data from database", error);
+    return res
+      .status(400)
+      .json({ message: "There was an issue in marking project as complete" });
   }
 };
