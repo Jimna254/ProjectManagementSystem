@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1"
+    />
+    <title>Admin Dashboard | Keyframe Effects</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+  </head>
+  <body>
+    <input type="checkbox" id="menu-toggle" />
+    <div class="sidebar">
+      <div class="side-header">
+        <h3>L<span>ogo</span></h3>
+      </div>
+
+      <div class="side-content">
+        <div class="profile">
+          <div
+            class="profile-img bg-img"
+            style="background-image: url(img/1.jpeg)"
+          ></div>
+          <h4>Jackson Mwadia</h4>
+          <small>Admin</small>
+        </div>
+
+        <div class="side-menu">
+          <ul>
+            <li>
+              <a href="" class="active">
+                <span class="las la-home"></span>
+                <small>Dashboard</small>
+              </a>
+            </li>
+            <li>
+              <a href="./users.html">
+                <span class="las la-user-alt"></span>
+                <small>Users</small>
+              </a>
+            </li>
+            <!-- <li>
+              <a href="">
+                <span class="las la-envelope"></span>
+                <small>Mailbox</small>
+              </a>
+            </li> -->
+            <li>
+              <a href="">
+                <span class="las la-clipboard-list"></span>
+                <small>Projects</small>
+              </a>
+            </li>
+            <!--  <li>
+                       <a href="">
+                            <span class="las la-shopping-cart"></span>
+                            <small>Orders</small>
+                        </a>
+                    </li> -->
+            <!--  <li>
+                       <a href="">
+                            <span class="las la-tasks"></span>
+                            <small>Tasks</small>
+                        </a>
+                    </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <header>
+        <div class="header-content">
+          <label for="menu-toggle">
+            <span class="las la-bars"></span>
+          </label>
+
+          <div class="header-menu">
+            <label for="">
+              <span class="las la-search"></span>
+            </label>
+
+            <div class="notify-icon">
+              <span class="las la-envelope"></span>
+              <span class="notify">4</span>
+            </div>
+
+            <div class="notify-icon">
+              <span class="las la-bell"></span>
+              <span class="notify">3</span>
+            </div>
+
+            <div class="user">
+              <div
+                class="bg-img"
+                style="background-image: url(img/1.jpeg)"
+              ></div>
+
+              <span class="las la-power-off"></span>
+              <span>Logout</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="page-header">
+          <h1>Dashboard</h1>
+          <small>Home / Dashboard</small>
+        </div>
+
+        <div class="page-content">
+          <div class="analytics">
+            <div class="card">
+              <div class="card-head">
+                <h2>17</h2>
+                <span class="las la-user-friends"></span>
+              </div>
+              <div class="card-progress">
+                <small>Users</small>
+                <div class="card-indicator">
+                  <div class="indicator one" style="width: 60%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-head">
+                <h2>4</h2>
+                <span class="las la-clipboard-list"></span>
+              </div>
+              <div class="card-progress">
+                <small>Past Deadline</small>
+                <div class="card-indicator">
+                  <div class="indicator two" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-head">
+                <h2>17</h2>
+                <span class="las la-clipboard-list"></span>
+              </div>
+              <div class="card-progress">
+                <small>Total Projects</small>
+                <div class="card-indicator">
+                  <div class="indicator three" style="width: 65%"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="card">
+              <div class="card-head">
+                <h2>47</h2>
+                <span class="las la-envelope"></span>
+              </div>
+              <div class="card-progress">
+                <small>New E-mails received</small>
+                <div class="card-indicator">
+                  <div class="indicator four" style="width: 90%"></div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="records table-responsive">
+            <div class="record-header">
+              <div class="add">
+                <!-- <span>Entries</span>
+                <select name="" id="">
+                  <option value="">ID</option>
+                </select> -->
+                <button>
+                  <a href="../Admin/Forms/addProject.html"> Add Project</a>
+                </button>
+              </div>
+
+              <div class="browse">
+                <input
+                  type="search"
+                  placeholder="Search"
+                  class="record-search"
+                />
+                <select name="" id="">
+                  <option value="">Status</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="table-wrapper">
+              <!-- <table width="100%">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th><span class="las la-sort"></span> User Assigned</th>
+                    <th><span class="las la-sort"></span> Project</th>
+                    <th><span class="las la-sort"></span> Description</th>
+                    <th><span class="las la-sort"></span> Created Date</th>
+                    <th><span class="las la-sort"></span> End Date</th>
+                    <th><span class="las la-sort"></span> Status</th>
+                    <th><span class="las la-sort"></span> ACTIONS</th>
+                  </tr>
+                </thead>
+                <tbody class="projectRecords"> -->
+                  <!-- <tr>
+                    <td>#5033</td>
+                    <td>
+                      <div class="client">
+                        <div
+                          class="client-img bg-img"
+                          style="background-image: url(img/3.jpeg)"
+                        ></div>
+                        <div class="client-info">
+                          <h4>Jackson Mwadia</h4>
+                          <small>mwadia@gmail.com</small>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Web Design</td>
+                    <td>Design website using Js, html and css</td>
+                    <td>05-02-2024</td>
+                    <td>05-04-2024</td>
+                    <td>Active</td>
+                    <td>
+                      <div class="actions">
+                        <span class="lab la-telegram-plane"></span>
+                        <span class="las la-eye"></span>
+                        <span
+                          style="font-size: 18px"
+                          class="fa-regular fa-pen-to-square"
+                        ></span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>#5033</td>
+                    <td>
+                      <div class="client">
+                        <div
+                          class="client-img bg-img"
+                          style="background-image: url(img/3.jpeg)"
+                        ></div>
+                        <div class="client-info">
+                          <h4>Jackson Mwadia</h4>
+                          <small>mwadia@gmail.com</small>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Web Design</td>
+                    <td>Design website using Js, html and css</td>
+                    <td>05-02-2024</td>
+                    <td>05-04-2024</td>
+                    <td>Active</td>
+                    <td>
+                      <div class="actions">
+                        <span class="lab la-telegram-plane"></span>
+                        <span class="las la-eye"></span>
+                        <span
+                          style="font-size: 18px"
+                          class="fa-regular fa-pen-to-square"
+                        ></span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>#5033</td>
+                    <td>
+                      <div class="client">
+                        <div
+                          class="client-img bg-img"
+                          style="background-image: url(img/3.jpeg)"
+                        ></div>
+                        <div class="client-info">
+                          <h4>Jackson Mwadia</h4>
+                          <small>mwadia@gmail.com</small>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Web Design</td>
+                    <td>Design website using Js, html and css</td>
+                    <td>05-02-2024</td>
+                    <td>05-04-2024</td>
+                    <td>Active</td>
+
+                    <td>
+                      <div class="actions">
+                        <span class="lab la-telegram-plane"></span>
+                        <span class="las la-eye"></span>
+                        <span
+                          style="font-size: 18px"
+                          class="fa-regular fa-pen-to-square"
+                        ></span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>#5033</td>
+                    <td>
+                      <div class="client">
+                        <div
+                          class="client-img bg-img"
+                          style="background-image: url(img/3.jpeg)"
+                        ></div>
+                        <div class="client-info">
+                          <h4>Jackson Mwadia</h4>
+                          <small>mwadia@gmail.com</small>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Web Design</td>
+                    <td>Design website using Js, html and css</td>
+                    <td>05-02-2024</td>
+                    <td>05-04-2024</td>
+                    <td>Active</td>
+
+                    <td>
+                      <div class="actions">
+                        <span class="lab la-telegram-plane"></span>
+                        <span class="las la-eye"></span>
+                        <span
+                          style="font-size: 18px"
+                          class="fa-regular fa-pen-to-square"
+                        ></span>
+                      </div>
+                    </td>
+                  </tr> -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="../dist/Admin.js"></script>
+  </body>
+</html>

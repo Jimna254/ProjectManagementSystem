@@ -1,0 +1,5 @@
+CREATE OR ALTER PROCEDURE getProjects
+AS
+BEGIN
+SELECT * FROM Projects
+END;
