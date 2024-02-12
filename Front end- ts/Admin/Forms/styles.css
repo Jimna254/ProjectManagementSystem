@@ -40,7 +40,16 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+.form-container>button {
+  color: red;
+ background-color: white;
+border: none;
+font-weight: bold;
+margin-left: 330px;
 
+
+
+}
 .icon-space {
   margin-right: 10px;
   display: inline-block;

@@ -10,9 +10,19 @@ Content-Type: application/json
     "areaofspecialization": "Software Engineer"
 }
 
+
 ### Get all Users
 GET http://localhost:3001/users
 Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRkMTY0YzdiLTM4MDgtNDRmNy04ODAyLTZiNjIzZDQwMjE3MiIsImVtYWlsIjoic3Vuc2hpbmVAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDc2Mzg4MDMsImV4cCI6MTcwNzY0MjQwM30.-QKhMehSugz46AIwj1Uhwy15KmjWJM4smssqIf7qz-A
+
+
+
+POST  http://localhost:3001
+
+
+
+
 
 ### Get One
 GET http://localhost:3001/users/fadc11ac-a4d0-4333-bc3e-452007da6086

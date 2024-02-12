@@ -7,7 +7,7 @@
       content="width=device-width,initial-scale=1,maximum-scale=1"
     />
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="/ProjectManagementSystem/Front end- ts/USER/userdash.css" />
+    <link rel="stylesheet" href="/ProjectManagementSystem/Front end- ts/USER/viewProject.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -107,11 +107,11 @@
             <div class="user">
               <div
                 class="bg-img"
-                style="background-image: url(img/1.jpeg)"
+                style="background-image: url(\ProjectManagementSystem\Front end- ts\Admin\img\1.jpeg)"
               ></div>
 
               <span class="las la-power-off"></span>
-              <span><a href="/ProjectManagementSystem/landing page/index.html">Logout</a> </span>
+              <span><a href="/ProjectManagementSystem/Front end- ts/landing page/index.html">Logout</a> </span>
             </div>
           </div>
         </div>
@@ -175,174 +175,12 @@
                 }
               </script>
             
-          </div>
-            <div class="card">
-              <div class="main">
-                <div class="projectcontainer">
-                  <div class="statuspreview">
-                    <p>Active</p>
-                  </div>
-                  <div class="projectcard">
-                    <div class="projectheader"><h4>Project Title</h4></div>
-                    <br>
-                    <div class="projectcontent">
-                      <p style="font-weight: bold;">Project Description:</p>
-                      <br> <br>   <br> <br>   <br>
-                      <p style="font-weight: bold;">Date Assigned:</p>
-                      <br>   <br> <br>
-                      
-                      <p style="font-weight: bold;">Project Deadline:</p>
-                    </div>
-                  </div>
-                  <div class="statusheader">
-                    <h4>Mark Status</h4>
-                  </div>
-          
-                  <form id="statusForm">
-                    <input
-                      type="radio"
-                      id="active"
-                      name="states"
-                      value="Active"
-                      onclick="updateStatusPreview(this.value)"
-                      checked
-                    />
-                     <label for="active">Active</label><br />
-                    <input
-                      type="radio"
-                      id="completed"
-                      name="states"
-                      value="Completed"
-                      onclick="updateStatusPreview(this.value)"
-                    />
-                      <label for="completed">Completed</label><br />
-                  </form>
-                </div>
-              </div>
-              <script>
-                function updateStatusPreview(status) {
-                  document.querySelector(".statuspreview p").textContent = status;
-                }
-              </script>
-            
-          </div>
-            <div class="card">
-              <div class="main">
-                <div class="projectcontainer">
-                  <div class="statuspreview">
-                    <p>Active</p>
-                  </div>
-                  <div class="projectcard">
-                    <div class="projectheader"><h4>Project Title</h4></div>
-                    <br>
-                    <div class="projectcontent">
-                      <p style="font-weight: bold;">Project Description:</p>
-                      <br> <br>   <br> <br>   <br>
-                      <p style="font-weight: bold;">Date Assigned:</p>
-                      <br>   <br> <br>
-                      
-                      <p style="font-weight: bold;">Project Deadline:</p>
-                    </div>
-                  </div>
-                  <div class="statusheader">
-                    <h4>Mark Status</h4>
-                  </div>
-          
-                  <form id="statusForm">
-                    <input
-                      type="radio"
-                      id="active"
-                      name="states"
-                      value="Active"
-                      onclick="updateStatusPreview(this.value)"
-                      checked
-                    />
-                     <label for="active">Active</label><br />
-                    <input
-                      type="radio"
-                      id="completed"
-                      name="states"
-                      value="Completed"
-                      onclick="updateStatusPreview(this.value)"
-                    />
-                      <label for="completed">Completed</label><br />
-                  </form>
-                </div>
-              </div>
-              <script>
-                function updateStatusPreview(status) {
-                  document.querySelector(".statuspreview p").textContent = status;
-                }
-              </script>
-            
-          </div>
-           
-          <div class="card">
-            <div class="main">
-              <div class="projectcontainer">
-                <div class="statuspreview">
-                  <p>Active</p>
-                </div>
-                <div class="projectcard">
-                  <div class="projectheader"><h4>Project Title</h4></div>
-                  <br>
-                  <div class="projectcontent">
-                    <p style="font-weight: bold;">Project Description:</p>
-                    <br> <br>   <br> <br>   <br>
-                    <p style="font-weight: bold;">Date Assigned:</p>
-                    <br>   <br> <br>
-                    
-                    <p style="font-weight: bold;">Project Deadline:</p>
-                  </div>
-                </div>
-                <div class="statusheader">
-                  <h4>Mark Status</h4>
-                </div>
+            </div>      
         
-                <form id="statusForm">
-                  <input
-                    type="radio"
-                    id="active"
-                    name="states"
-                    value="Active"
-                    onclick="updateStatusPreview(this.value)"
-                    checked
-                  />
-                   <label for="active">Active</label><br />
-                  <input
-                    type="radio"
-                    id="completed"
-                    name="states"
-                    value="Completed"
-                    onclick="updateStatusPreview(this.value)"
-                  />
-                    <label for="completed">Completed</label><br />
-                </form>
-              </div>
-            </div>
-            <script>
-              function updateStatusPreview(status) {
-                document.querySelector(".statuspreview p").textContent = status;
-              }
-            </script>
-          
-        </div>
-        </main>
-            </div>
-
-            <!-- <div class="card">
-              <div class="card-head">
-                <h2>47</h2>
-                <span class="las la-envelope"></span>
-              </div>
-              <div class="card-progress">
-                <small>New E-mails received</small>
-                <div class="card-indicator">
-                  <div class="indicator four" style="width: 90%"></div>
-                </div>
-              </div>
-            </div> -->
+        
           </div>
+
+        </div>
 
           
             

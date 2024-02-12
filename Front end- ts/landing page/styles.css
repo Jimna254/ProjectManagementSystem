@@ -62,7 +62,7 @@ nav {
 
 .link .nav__btn {
   padding: 0.5rem 2rem;
-  color: var(--white) !important;
+  color: var(--white);
   background-color: var(--primary-color);
   border-radius: 5px;
 }

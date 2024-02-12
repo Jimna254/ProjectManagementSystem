@@ -46,7 +46,7 @@ export const loginUser = async (req: Request, res: Response) => {
     };
 
     const token = jwt.sign(loginCredentials, sqlConfig.SECRET, {
-      expiresIn: "86400s",
+      expiresIn: "1000000s",
     });
 
     return res.status(200).json({
