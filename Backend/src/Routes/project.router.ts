@@ -18,7 +18,7 @@ projectRouter.post("/", verifyToken, createProject); //crear un usuario nuevo en
 projectRouter.get("/", verifyToken, getProjects);
 projectRouter.get("/:id", verifyToken, getOneProject);
 projectRouter.put("/update/:id", verifyToken, updateProject);
-projectRouter.put("/assignuser/:id", verifyToken, assignUser);
+projectRouter.put("/assignuser/:project_id", verifyToken, assignUser);
 projectRouter.delete("/delete/:id", verifyToken, deleteProject);
 
 export default projectRouter;

@@ -4,8 +4,8 @@ Content-Type: application/json
 token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRkMTY0YzdiLTM4MDgtNDRmNy04ODAyLTZiNjIzZDQwMjE3MiIsImVtYWlsIjoic3Vuc2hpbmVAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDc3MTk5ODMsImV4cCI6MTcwNzgwNjM4M30.aLeSja1Vdpw-yzbAzDBsnztimlPlKNMcP7HPMrmnoyU
 
 {
-    "projectname": "PMSendpoints",
-    "description": "Backend",
+    "projectname": "PMSNodeMailer",
+    "description": "BackgroundService",
     "createdate": "2024-02-12",
     "enddate": "2024-12-31"
 }
@@ -13,7 +13,7 @@ token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRkMTY0YzdiLTM4MDgtNDRmNy04
 ### Get all Projects
 GET http://localhost:3001/projects
 Content-Type: application/json
-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRkMTY0YzdiLTM4MDgtNDRmNy04ODAyLTZiNjIzZDQwMjE3MiIsImVtYWlsIjoic3Vuc2hpbmVAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDc3MDY4NDUsImV4cCI6MTcwNzcxMDQ0NX0.LNj6eEXUzLULN0g7yQLfB_OQrsYOvSYLEqDkh4eaDa4
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRkMTY0YzdiLTM4MDgtNDRmNy04ODAyLTZiNjIzZDQwMjE3MiIsImVtYWlsIjoic3Vuc2hpbmVAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDc3MTk5ODMsImV4cCI6MTcwNzgwNjM4M30.aLeSja1Vdpw-yzbAzDBsnztimlPlKNMcP7HPMrmnoyU
 
 
 ### Get One

@@ -91,7 +91,7 @@ export const updateProject = async (req: Request, res: Response) => {
 
 export const assignUser = async (req: Request, res: Response) => {
   try {
-    const id = req.params.id;
+    const id = req.params.project_id;
 
     const { user_id }: Project = req.body;
     console.log("proj ID:", id);
@@ -99,6 +99,9 @@ export const assignUser = async (req: Request, res: Response) => {
       project_id: id,
       user_id: user_id,
     });
+    console.log("UserID", user_id);
+    console.log("UserID", user_id);
+
     return res.json({ result, message: "Project assigned successfully" });
   } catch (error) {
     console.log("Error in getting data from database", error);
