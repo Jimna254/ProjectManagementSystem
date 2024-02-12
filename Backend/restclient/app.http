@@ -1,0 +1,40 @@
+## Create  User
+POST http://localhost:3001/users
+Content-Type: application/json
+
+{
+    "name": "Rosid AliB",
+    "email": "rosid88221262@gmail.com",
+    "role": "user",
+    "password": "1234567890",
+    "areaofspecialization": "Software Engineer"
+}
+
+### Get all Users
+GET http://localhost:3001/users
+Content-Type: application/json
+
+### Get One
+GET http://localhost:3001/users/fadc11ac-a4d0-4333-bc3e-452007da6086
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRkMTY0YzdiLTM4MDgtNDRmNy04ODAyLTZiNjIzZDQwMjE3MiIsImVtYWlsIjoic3Vuc2hpbmVAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDc2Mzg4MDMsImV4cCI6MTcwNzY0MjQwM30.-QKhMehSugz46AIwj1Uhwy15KmjWJM4smssqIf7qz-A
+
+### Update a user
+PUT http://localhost:3001/users/update/9bea87ed-1929-4963-b2c3-178839ef8b85
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRkMTY0YzdiLTM4MDgtNDRmNy04ODAyLTZiNjIzZDQwMjE3MiIsImVtYWlsIjoic3Vuc2hpbmVAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDc2Mzg4MDMsImV4cCI6MTcwNzY0MjQwM30.-QKhMehSugz46AIwj1Uhwy15KmjWJM4smssqIf7qz-A
+
+
+{
+    "name": "Kariuki James",
+    "email": "jameskw26@gmail.com",
+    "role": "user",
+    "password": "12345678",
+    "areaofspecialization": "Software Engineer"
+}
+
+### Delete a user
+
+DELETE http://localhost:3001/users/delete/9bea87ed-1929-4963-b2c3-178839ef8b85
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRkMTY0YzdiLTM4MDgtNDRmNy04ODAyLTZiNjIzZDQwMjE3MiIsImVtYWlsIjoic3Vuc2hpbmVAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDc2Mzg4MDMsImV4cCI6MTcwNzY0MjQwM30.-QKhMehSugz46AIwj1Uhwy15KmjWJM4smssqIf7qz-A
