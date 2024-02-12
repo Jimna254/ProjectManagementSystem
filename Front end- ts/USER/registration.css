@@ -20,7 +20,7 @@ body {
   }
   
   .image {
-    flex: 2;
+    flex: 1;
   }
   
   .image img {
@@ -60,7 +60,7 @@ body {
     background-image: linear-gradient(to right, #4a7d78, #4a7d78, #d9d9d9);
     color: #fff;
     cursor: pointer;
-    padding: 8px;
+    padding: px;
     border: none;
     width: 40%;
     border-radius: 5px;
