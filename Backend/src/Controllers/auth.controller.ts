@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import bcrypt from "bcrypt";
 import mssql from "mssql";
 import jwt from "jsonwebtoken";
-import { loginUserSchema } from "../Validators/auth.validator";
+import { loginUserSchema } from"../Validators/auth.validator";
 import { sqlConfig } from "../Config/sql.config";
 
 import { ExtendedUserRequest } from "../Middlewares/verifyToken";

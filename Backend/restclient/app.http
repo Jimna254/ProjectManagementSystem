@@ -3,8 +3,8 @@ POST http://localhost:3001/users
 Content-Type: application/json
 
 {
-    "name": "Kariuki James",
-    "email": "jimmynarokian254@gmail.com",
+    "name": "Rosid AliB",
+    "email": "rosid88221262@gmail.com",
     "role": "user",
     "password": "1234567890",
     "areaofspecialization": "Software Engineer"
