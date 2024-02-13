@@ -4,8 +4,8 @@ Content-Type: application/json
 token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRkMTY0YzdiLTM4MDgtNDRmNy04ODAyLTZiNjIzZDQwMjE3MiIsImVtYWlsIjoic3Vuc2hpbmVAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDc3MTk5ODMsImV4cCI6MTcwNzgwNjM4M30.aLeSja1Vdpw-yzbAzDBsnztimlPlKNMcP7HPMrmnoyU
 
 {
-    "projectname": "PMSNodeMailer",
-    "description": "BackgroundService",
+    "projectname": "Pokemon",
+    "description": "Game dev using Java",
     "createdate": "2024-02-12",
     "enddate": "2024-12-31"
 }
@@ -52,7 +52,7 @@ token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRkMTY0YzdiLTM4MDgtNDRmNy04
 DELETE http://localhost:3001/projects/delete/4bd40c9e-8f44-4408-a85e-8608cf37dcac
 Content-Type: application/json
 token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRkMTY0YzdiLTM4MDgtNDRmNy04ODAyLTZiNjIzZDQwMjE3MiIsImVtYWlsIjoic3Vuc2hpbmVAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDc3NDc4NjUsImV4cCI6MTcwNzgzNDI2NX0.jEx3PWynJPUI0Ibva9lezSjpBGP0qwQ8MNjk_3Z50P0
-
+a
 ###Mark as complete
 PUT http://localhost:3001/projects/markascomplete/4bd40c9e-8f44-4408-a85e-8608cf37dcac
 Content-Type: application/json

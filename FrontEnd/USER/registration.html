@@ -15,6 +15,7 @@
     <title>Document</title>
   </head>
   <body>
+    <p class="success-msg">Registered successfully</p>
     <a href="../landing page/index.html" class="button"
       ><button>Back</button></a
     >
@@ -28,23 +29,22 @@
       </div>
       <div class="formcontainer">
         <h2>Register to your account</h2>
-        <form action="">
+        <form id="registerForm">
           <label for="name">Name:</label><br />
           <input type="text" id="name" required /><br />
-          <label for="username">Username:</label><br />
-          <input type="text" id="username" required /><br />
-          <label for="username">Email:</label><br />
-          <input type="text" id="email" required /><br />
 
+          <label for="email">Email:</label><br />
+          <input type="text" id="email" required /><br />
+          <label for="specialization">Area of specilization:</label><br />
+          <input type="text" id="specialization" required /><br />
           <label for="password">Password:</label><br />
           <input type="password" id="password" required /><br />
-          <label for="username">Area of specilization:</label><br />
-          <input type="text" id="specilization" required /><br />
 
           <button type="submit">Sign Up</button><br />
           <a href="./login.html">Login</a>
         </form>
       </div>
     </div>
+    <script src="../dist/register.js"></script>
   </body>
 </html>

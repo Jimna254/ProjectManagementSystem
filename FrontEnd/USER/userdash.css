@@ -45,12 +45,11 @@
   align-items: center;
 }
 
-.side-header h3,
-side-head span {
-  color: #fff;
-  font-weight: 400;
+.side-header> img{
+  width: 140px;
+  height: 80px;
+  padding: 10px;
 }
-
 .side-content {
   height: calc(100vh - 60px);
   overflow: auto;

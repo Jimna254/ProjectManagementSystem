@@ -90,3 +90,12 @@ button {
   border-style: none;
   border-radius: 5px;
 }
+
+.success-msg {
+ 
+  margin-top: -43%;
+  background-color: rgb(61, 246, 61);
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+}

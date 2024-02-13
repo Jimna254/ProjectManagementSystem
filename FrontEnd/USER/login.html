@@ -27,24 +27,24 @@
       </div>
       <div class="formcontainer">
         <h2>Login to your account</h2>
-        <form action="">
-          <label for="username">Username:</label><br />
-          <input type="text" id="username" required /><br />
+        <form id="loginform">
+          <label for="email">Email</label><br />
+          <input type="text" id="email" required autocomplete="email" /><br />
 
-          <label for="password">Password:</label><br />
-          <input type="password" id="password" required /><br />
-          <button type="submit">
-            <a
-              href="/ProjectManagementSystem/Front end- ts/USER/userdash.html"
-              style="color: white"
-            >
-              Login</a
-            ></button
-          ><br />
-          <a href="./forgetPassword.html">Forgot password</a>
+          <label for="password">Password</label><br />
+          <input
+            type="password"
+            id="password"
+            required
+            autocomplete="current-password"
+          /><br />
+          <p id="email-error"></p>
+          <button type="submit">Login</button><br />
+          <a href="./forgetPassword.html">Forgot password?</a>
           <a href="./registration.html">Create Account</a>
         </form>
       </div>
     </div>
+    <script src="../dist/login.js"></script>
   </body>
 </html>
