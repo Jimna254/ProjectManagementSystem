@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainer {
+  background-image: url("../../../assets/Cloud-Based-Project-Management-Software.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-page-content {
+  margin-top: -20%;
+  display: flex;
+  flex-direction: column;
+
+  max-width: 50%;
+}
+
+.landing-page-content > h1 {
+  color: #063970;
+  font-weight: bolder;
+}
+
+.landing-page-content > p {
+  font-size: 20px;
+}

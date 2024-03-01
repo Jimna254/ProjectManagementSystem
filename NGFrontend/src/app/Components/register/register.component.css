@@ -1,0 +1,110 @@
+.backgroundImage {
+  background-size: cover;
+  background-position: center;
+  height: 89.3vh;
+  width: 100vw;
+  padding: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(197, 226, 224, 0.6);
+  /* padding-right: 20px; */
+}
+
+.main form {
+  background-color: rgba(255, 255, 255, 0.6);
+  /* padding: 40px; */
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 60px;
+  padding-left: 40px;
+}
+
+.main form h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.main form div {
+  margin-bottom: 20px;
+}
+
+.main form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.main form input[type="areaofspecialization"],
+.main form input[type="name"],
+.main form input[type="email"],
+.main form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.main form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.main form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.main form a {
+  display: block;
+  text-align: center;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.main form a:hover {
+  color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main form {
+    width: 90%; /* Make the form width responsive */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+}
+.error {
+  color: #ff0000; /* Red */
+  background-color: #ffd2d2; /* Light red background */
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ff0000;
+}
+
+.success {
+  color: #008000; /* Green */
+  background-color: #d2ffd2; /* Light green background */
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #008;
+}

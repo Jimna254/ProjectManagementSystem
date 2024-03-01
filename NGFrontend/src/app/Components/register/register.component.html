@@ -1,0 +1,60 @@
+<app-navbar></app-navbar>
+<div class="backgroundImage">
+  <div class="main">
+    <form #registerForm="ngForm" (ngSubmit)="register(registerForm.value)">
+      <h1>Create Your PMS Account</h1>
+
+      <div *ngIf="visible" class="error">{{ errorMsg }}</div>
+      <div *ngIf="visible2" class="success">{{ successMsg }}</div>
+
+      <div>
+        <label>Full Name</label>
+        <input type="name" name="name" ngModel placeholder="Jane Doe" />
+      </div>
+
+      <div>
+        <label>Email address</label>
+        <input
+          type="email"
+          name="email"
+          ngModel
+          placeholder="janedoe@yopmail.com"
+        />
+      </div>
+
+      <div>
+        <label>Area of Specialization</label>
+        <input
+          type="areaofspecialization"
+          name="  areaofspecialization"
+          ngModel
+          placeholder="Software Engineer"
+        />
+      </div>
+
+      <div>
+        <label>Password</label>
+        <input
+          type="password"
+          name="password"
+          ngModel
+          placeholder="*********"
+        />
+      </div>
+
+      <div>
+        <input
+          type="submit"
+          [disabled]="registerForm.invalid"
+          value="Create Account"
+        />
+        <a>Proceed to login?</a>
+      </div>
+
+      <!-- /
+          <div>
+              <a routerLink="/login"> Proceed to Log In?</a>
+          </div> -->
+    </form>
+  </div>
+</div>

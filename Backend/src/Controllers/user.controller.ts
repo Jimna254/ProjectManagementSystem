@@ -48,7 +48,7 @@ export const createUser = async (req: Request, res: Response) => {
 //get all users
 export const getUsers = async (req: Request, res: Response) => {
   try {
-    let users = await dbhelper.execute("getUsers");
+    let users = (await dbhelper.execute("getUsers")).recordset;
     if (users) {
       return res.json({ users });
     } else {
@@ -68,7 +68,8 @@ export const getOneUser = async (req: Request, res: Response) => {
   try {
     const id = req.params.id;
     console.log("User ID:", id);
-    let user = await dbhelper.execute("getOneUser", { user_id: id });
+    let user = (await dbhelper.execute("getOneUser", { user_id: id }))
+      .recordset;
 
     return res.json({ user });
   } catch (error) {
@@ -106,7 +107,8 @@ export const deleteUser = async (req: Request, res: Response) => {
   try {
     const id = req.params.id;
     console.log("User ID:", id);
-    let user = await dbhelper.execute("deleteUser", { user_id: id });
+    let user = (await dbhelper.execute("deleteUser", { user_id: id }))
+      .recordset;
 
     return res.json({ user });
   } catch (error) {

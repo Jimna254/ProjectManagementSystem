@@ -1,0 +1,62 @@
+<app-navbar></app-navbar>
+<div class="backgroundImage">
+  <div class="login">
+    <form [formGroup]="loginForm" (ngSubmit)="login(loginForm.value)">
+      <div><h4>Log In Here!</h4></div>
+      <div *ngIf="visible" class="error">{{ errorMsg }}</div>
+      <div *ngIf="visible2" class="success">{{ sucessMsg }}</div>
+
+      <div>
+        <label>Email</label><br />
+        <input style="width: 250px" type="email" formControlName="email" />
+        <div
+          class="error-message"
+          *ngIf="
+            loginForm.get('email')?.invalid &&
+            loginForm.get('email')?.touched &&
+            !loginForm.get('email')?.dirty
+          "
+        >
+          Email is required
+        </div>
+        <div
+          class="error-message"
+          *ngIf="
+            loginForm.get('email')?.invalid &&
+            loginForm.get('email')?.touched &&
+            loginForm.get('email')?.dirty
+          "
+        >
+          Invalid format
+        </div>
+      </div>
+
+      <div>
+        <label>Password</label>
+        <input type="password" formControlName="password" />
+        <div
+          class="error-message"
+          *ngIf="
+            loginForm.get('password')?.invalid &&
+            loginForm.get('password')?.touched
+          "
+        >
+          Password is required
+        </div>
+        <div
+          class="error-message"
+          *ngIf="
+            loginForm.get('password')?.invalid &&
+            loginForm.get('password')?.touched &&
+            !loginForm.get('password')?.dirty
+          "
+        >
+          Must have letters
+        </div>
+      </div>
+      <div>
+        <input type="submit" [disabled]="loginForm.invalid" value="Login" />
+      </div>
+    </form>
+  </div>
+</div>
