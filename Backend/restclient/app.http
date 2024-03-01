@@ -5,10 +5,8 @@ Content-Type: application/json
 {
     "name": "James",
     "email": "jimmynarokian254@gmail.com",
-    "role": "admin",
     "areaofspecialization": "SoftwareEngineer",
     "password": "12345678"
-    
 }
 
 ### Get all Users

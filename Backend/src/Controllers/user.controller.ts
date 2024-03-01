@@ -15,8 +15,7 @@ export const createUser = async (req: Request, res: Response) => {
 
     console.log(id);
 
-    const { name, email, role, password, areaofspecialization }: User =
-      req.body;
+    const { name, email, password, areaofspecialization }: User = req.body;
 
     console.log(req.body);
 
@@ -29,7 +28,6 @@ export const createUser = async (req: Request, res: Response) => {
         .input("user_id", mssql.VarChar, id)
         .input("name", mssql.VarChar, name)
         .input("email", mssql.VarChar, email)
-        .input("role", mssql.VarChar, role)
         .input("AreaOfSpecialization", mssql.VarChar, areaofspecialization)
         .input("Password", mssql.VarChar, hashed_pwd)
         .execute("registerUser")
