@@ -48,16 +48,16 @@ describe('Working with fixtures with multiple data', () => {
             });
         } else if (
           data.email == 'jimmynarokian254@gmail.com' &&
-          data.password !== '12345678'
+          data.password != '12345678'
         ) {
           cy.get('.loginbtn').click();
-          cy.contains('Incorrect password');
+          cy.contains('Email or Password is incorrect.');
         } else if (
-          data.email !== 'jimmynarokian254@gmail.com' &&
+          data.email != 'jimmynarokian254@gmail.com' &&
           data.password == '12345678'
         ) {
           cy.get('.loginbtn').click();
-          cy.contains('User Not Found!');
+          cy.contains('Email or Password is incorrect.!');
         }
       });
     });
@@ -81,7 +81,7 @@ describe('Requests without hitting the backend', () => {
     cy.wait('@loginRequest').then((interception) => {
       expect(interception.request.body).to.exist;
 
-      cy.get('.success-msg').should('contain', 'Logged in successfully');
+      cy.get('.success').should('contain', 'Logged in successfully');
     });
   });
 });
