@@ -12,13 +12,9 @@ describe('Working with fixtures', () => {
 
     cy.get('.email').type(data.email);
     cy.get('.password').type(data.password);
-    cy.get('.loginbtn')
-      .click()
-      .then((el) => {
-        cy.location('pathname').should('not.eq', '/login');
-        cy.location('pathname').should('equal', '/user');
-        cy.get('[data-cy="logout-link"]');
-      });
+    cy.get('.loginbtn').click();
+    cy.contains('Logged in successfully');
+    cy.contains('userdashboard works!');
   });
 });
 
@@ -39,20 +35,29 @@ describe('Working with fixtures with multiple data', () => {
         cy.get('.email').type(data.email);
         cy.get('.password').type(data.password);
 
-        if (data.email == 'admin@yopmail.com' && data.password == 'admin') {
+        if (
+          data.email == 'jimmynarokian254@gmail.com' &&
+          data.password == '12345678'
+        ) {
           cy.get('.loginbtn')
             .click()
             .then((el) => {
-              cy.location('pathname').should('equal', '/admin/view-users');
+              cy.location('pathname').should('equal', 'user');
               cy.get('[data-cy="logout-link"]').click();
               cy.visit('/login');
             });
         } else if (
-          data.email == 'admin@yopmail.com' &&
-          data.password !== 'admin'
+          data.email == 'jimmynarokian254@gmail.com' &&
+          data.password !== '12345678'
         ) {
           cy.get('.loginbtn').click();
           cy.contains('Incorrect password');
+        } else if (
+          data.email !== 'jimmynarokian254@gmail.com' &&
+          data.password == '12345678'
+        ) {
+          cy.get('.loginbtn').click();
+          cy.contains('User Not Found!');
         }
       });
     });

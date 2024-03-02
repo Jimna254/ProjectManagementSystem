@@ -1,10 +1,10 @@
 [
   {
-    "email": "admin@yopmail.com",
-    "password": "admin"
+    "email": "wrongmail@gmail.com",
+    "password": "12345678"
   },
   {
-    "email": "admin@yopmail.com",
-    "password": "wrongpassword"
+    "email": "jimmynarokian254@gmail.com",
+    "password": "WrongPassword"
   }
 ]

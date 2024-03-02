@@ -9,4 +9,8 @@ import { Router, RouterLink } from '@angular/router';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
 })
-export class NavbarComponent {}
+export class NavbarComponent {
+  token = localStorage.getItem('token');
+
+  constructor(private router: Router) {}
+}
